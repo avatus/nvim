@@ -21,7 +21,7 @@ M.setup = function()
       active = signs,
     },
     update_in_insert = true,
-    underline = true,
+    underline = false,
     severity_sort = true,
     float = {
       focusable = false,
@@ -82,10 +82,10 @@ M.on_attach = function(client, bufnr)
 -- vim.notify(client.name .. " starting...")
 -- TODO: refactor this into a method that checks if string in list
   -- if client.name == "tsserver" then
-  --   client.resolved_capabilities.document_formatting = false
+  --   client.server_capabilities.document_formatting = false
   -- end
   lsp_keymaps(bufnr)
-  lsp_highlight_document(client)
+  -- lsp_highlight_document(client)
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
