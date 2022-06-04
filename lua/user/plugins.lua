@@ -58,7 +58,6 @@ return packer.startup(function(use)
 	use("goolord/alpha-nvim")
 	use("antoinemadec/FixCursorHold.nvim") -- This is needed to fix lsp doc highlight
 	use("folke/which-key.nvim")
-	use("tversteeg/registers.nvim")
 
 	-- Colorschemes
 	use({
@@ -80,7 +79,6 @@ return packer.startup(function(use)
 	use("tamago324/nlsp-settings.nvim") -- language server settings defined in json for
 	use("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
 	use("MunifTanjim/prettier.nvim")
-	use("steelsojka/headwind.nvim")
 
 	-- Telescope
 	use("nvim-telescope/telescope.nvim")

@@ -134,11 +134,6 @@ _G.packer_plugins = {
     path = "/Users/michael/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["headwind.nvim"] = {
-    loaded = true,
-    path = "/Users/michael/.local/share/nvim/site/pack/packer/start/headwind.nvim",
-    url = "https://github.com/steelsojka/headwind.nvim"
-  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/Users/michael/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -228,11 +223,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/michael/.local/share/nvim/site/pack/packer/start/project.nvim",
     url = "https://github.com/ahmedkhalf/project.nvim"
-  },
-  ["registers.nvim"] = {
-    loaded = true,
-    path = "/Users/michael/.local/share/nvim/site/pack/packer/start/registers.nvim",
-    url = "https://github.com/tversteeg/registers.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,

@@ -1,1 +1,0 @@
-require("headwind").setup({})
