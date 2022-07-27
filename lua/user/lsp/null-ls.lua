@@ -17,7 +17,7 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 null_ls.setup({
 	debug = false,
 	sources = {
-		formatting.prettier.with({ extra_args = { "--single-quote", "--jsx-single-quote", "--tab-width 4" } }),
+		formatting.prettier.with({ extra_args = {} }),
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.gofmt,
 		formatting.stylua,
