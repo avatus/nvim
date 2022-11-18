@@ -9,6 +9,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 opt.cmdheight = 0
+opt.undofile = true
 
 opt.wrap = false
 
