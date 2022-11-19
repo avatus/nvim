@@ -125,3 +125,7 @@ local config = {
 }
 
 vim.diagnostic.config(config)
+-- Change border of documentation hover window, See https://github.com/neovim/neovim/pull/13998.
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+  border = "single",
+})

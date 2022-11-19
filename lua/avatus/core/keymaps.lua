@@ -32,7 +32,7 @@ keymaps.set("n", "<leader>gl", "<cmd>lua require 'gitsigns'.blame_line()<cr>")
 keymaps.set(
   "n",
   "gl",
-  '<cmd>lua vim.diagnostic.open_float({ border = "rounded" })<CR>',
+  '<cmd>lua vim.diagnostic.open_float({ border = "single" })<CR>',
   { noremap = true, silent = true }
 )
 keymaps.set("n", "<leader>lj", "<cmd>lua vim.diagnostic.goto_next()<CR>")

@@ -51,7 +51,7 @@ local c = {
   gitBranch = {
     provider = "git_branch",
     hl = {
-      fg = "red",
+      fg = "purple",
       bg = "bg",
       style = "bold",
     },
