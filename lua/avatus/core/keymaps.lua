@@ -28,6 +28,7 @@ keymaps.set("n", "<leader>gj", "<cmd>lua require 'gitsigns'.next_hunk()<cr>")
 keymaps.set("n", "<leader>gk", "<cmd>lua require 'gitsigns'.prev_hunk()<cr>")
 keymaps.set("n", "<leader>gp", "<cmd>lua require 'gitsigns'.preview_hunk()<cr>")
 keymaps.set("n", "<leader>gr", "<cmd>lua require 'gitsigns'.reset_hunk()<cr>")
+keymaps.set("n", "<leader>c", "<cmd>:bdelete<cr>")
 keymaps.set("n", "<leader>gl", "<cmd>lua require 'gitsigns'.blame_line()<cr>")
 keymaps.set(
   "n",
