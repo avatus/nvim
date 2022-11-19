@@ -4,17 +4,17 @@ if not line_ok then
 end
 
 local one_monokai = {
-  fg = "#abb2bf",
-  bg = "#1e2024",
-  green = "#98c379",
-  yellow = "#e5c07b",
-  purple = "#c678dd",
-  orange = "#d19a66",
-  peanut = "#f6d5a4",
-  red = "#e06c75",
-  aqua = "#61afef",
-  darkblue = "#282c34",
-  dark_red = "#f75f5f",
+  fg = "#c0caf5",
+  bg = "#1a1b26",
+  green = "#9ece6a",
+  yellow = "#e0af68",
+  purple = "#bb9af7",
+  orange = "#ff9e64",
+  peanut = "#ff9e64",
+  red = "#f7768e",
+  aqua = "#2ac3de",
+  darkblue = "#7aa2f7",
+  dark_red = "#f7768e",
 }
 
 local vi_mode_colors = {
@@ -40,7 +40,7 @@ local c = {
     hl = function()
       return {
         fg = require("feline.providers.vi_mode").get_mode_color(),
-        bg = "darkblue",
+        bg = "bg",
         style = "bold",
         name = "NeovimModeHLColor",
       }
@@ -51,8 +51,8 @@ local c = {
   gitBranch = {
     provider = "git_branch",
     hl = {
-      fg = "peanut",
-      bg = "darkblue",
+      fg = "red",
+      bg = "bg",
       style = "bold",
     },
     left_sep = "block",
@@ -196,7 +196,7 @@ local middle = {}
 
 local right = {
   c.gitBranch,
-  c.scroll_bar,
+  -- c.scroll_bar,
 }
 
 local components = {

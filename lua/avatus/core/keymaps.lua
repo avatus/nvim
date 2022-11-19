@@ -19,7 +19,6 @@ keymaps.set("n", "<leader>tp", ":tabp<CR>")
 keymaps.set("n", "<leader>gg", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
 
 keymaps.set("n", "<leader>e", ":Neotree toggle<CR>")
-keymaps.set("n", "<leader>o", "<cmd>SymbolsOutline<CR>")
 keymaps.set("n", "<leader>b", ":Neotree buffers toggle<CR>")
 keymaps.set("n", "<leader>G", ":Neotree git_status toggle<CR>")
 keymaps.set("n", "<leader>f", "<cmd>lua require('fzf-lua').files()<CR>", { noremap = true, silent = true })

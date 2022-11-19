@@ -1,4 +1,3 @@
-vim.g["symbols_outline_state"] = require("symbols-outline").state
 vim.cmd([[
   augroup _general_settings
     autocmd!
@@ -7,8 +6,6 @@ vim.cmd([[
     autocmd BufWinEnter * :set formatoptions-=cro
     autocmd FileType qf set nobuflisted
     autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
-    autocmd BufEnter * if winnr('$') == 1 && exists('g:symbols_outline_state.outline_buf') && g:symbols_outline_state.outline_buf | quit | endif
-    autocmd FileType Outline setlocal signcolumn=no
   augroup end
   augroup _git
     autocmd!

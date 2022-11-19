@@ -34,8 +34,8 @@ return packer.startup(function(use)
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
 
-  use("LunarVim/horizon.nvim")
-  -- use("folke/tokyonight.nvim")
+  -- use("LunarVim/horizon.nvim")
+  use("folke/tokyonight.nvim")
 
   use("christoomey/vim-tmux-navigator") -- tmux & split window navigation
 
@@ -89,6 +89,7 @@ return packer.startup(function(use)
   -- managing & installing lsp servers, linters & formatters
   use("williamboman/mason.nvim") -- in charge of managing lsp servers, linters & formatters
   use("williamboman/mason-lspconfig.nvim") -- bridges gap b/w mason & lspconfig
+  use("WhoIsSethDaniel/mason-tool-installer.nvim")
 
   -- configuring lsp servers
   use("neovim/nvim-lspconfig") -- easily configure language servers
