@@ -47,6 +47,12 @@ return packer.startup(function(use)
   -- commenting with gc
   use("numToStr/Comment.nvim")
 
+  -- terminal
+  use({
+    "akinsho/toggleterm.nvim",
+    tag = "*",
+  })
+
   -- file explorer
   -- use("nvim-tree/nvim-tree.lua")
   use({
@@ -58,6 +64,7 @@ return packer.startup(function(use)
       "MunifTanjim/nui.nvim",
     },
   })
+  use("simrat39/symbols-outline.nvim")
 
   -- vs-code like icons
   use("nvim-tree/nvim-web-devicons")

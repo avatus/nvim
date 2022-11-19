@@ -25,8 +25,11 @@ local on_attach = function(client, bufnr)
 
   -- set keybinds
   keymap.set("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts) -- got to declaration
+  keymap.set("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts) -- got to declaration
+  keymap.set("n", "<leader>r", "<cmd>lua vim.lsp.buf.rename()<CR>", opts) -- got to declaration
+  keymap.set("n", "gr", "<Cmd>lua vim.lsp.buf.references()<CR>", opts) -- got to declaration
   keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts) -- go to implementation
-  keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
+  keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>")
 
   -- typescript specific keymaps (e.g. rename file and update imports)
   if client.name == "tsserver" then
@@ -100,3 +103,25 @@ lspconfig["sumneko_lua"].setup({
     },
   },
 })
+
+local config = {
+  -- disable virtual text
+  virtual_text = false,
+  -- show signs
+  signs = {
+    active = signs,
+  },
+  update_in_insert = true,
+  underline = false,
+  severity_sort = true,
+  float = {
+    focusable = false,
+    style = "minimal",
+    -- border = "rounded",
+    source = "always",
+    header = "",
+    prefix = "",
+  },
+}
+
+vim.diagnostic.config(config)

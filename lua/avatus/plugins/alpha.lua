@@ -71,24 +71,6 @@ local buttons = {
     },
     { type = "padding", val = 1 },
     button("e", "New file", ":ene <BAR> startinsert<CR>", { hl = { { "Bold", 0, 1 }, { "String", 1, 50 } } }),
-    button(
-      "f",
-      "Find file",
-      "<cmd>lua require('telescope.builtin').find_files()<CR>",
-      { hl = { { "Bold", 0, 1 }, { "Operator", 1, 50 } } }
-    ),
-    button(
-      "a",
-      "Live grep",
-      "<cmd>lua require('telescope.builtin').live_grep({ shorten_path = true })<CR>",
-      { hl = { { "Bold", 0, 1 }, { "Operator", 1, 50 } } }
-    ),
-    button(
-      "d",
-      "Dotfiles",
-      "<cmd>lua require('telescope.builtin').find_files({ search_dirs = { os.getenv('HOME') .. '/dotfiles' } })<CR>",
-      { hl = { { "Bold", 0, 1 }, { "Operator", 1, 50 } } }
-    ),
     button("u", "Update plugins", ":PackerSync<CR>", { hl = { { "Bold", 0, 1 }, { "Structure", 1, 50 } } }),
     button("l", "Update LSP tools", ":MasonToolsUpdate<CR>", { hl = { { "Bold", 0, 1 }, { "Structure", 1, 50 } } }),
     button("t", "Update TS parsers", ":TSUpdate<CR>", { hl = { { "Bold", 0, 1 }, { "Structure", 1, 50 } } }),
