@@ -6,6 +6,7 @@ vim.cmd([[
     autocmd BufWinEnter * :set formatoptions-=cro
     autocmd FileType qf set nobuflisted
     autocmd FileType qf nnoremap <buffer> <CR> <CR>:cclose<CR>
+  autocmd FileType Outline setlocal signcolumn=no
   augroup end
   augroup _git
     autocmd!

@@ -10,6 +10,7 @@ opt.expandtab = true
 opt.autoindent = true
 opt.cmdheight = 0
 opt.undofile = true
+opt.pumheight = 10
 
 opt.wrap = false
 
@@ -26,3 +27,4 @@ opt.clipboard:append("unnamedplus")
 
 opt.iskeyword:append("-")
 -- opt.cursorline = true
+vim.diagnostic.config({ virtual_lines = { only_current_line = true } })

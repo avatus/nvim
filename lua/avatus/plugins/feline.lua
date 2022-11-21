@@ -136,7 +136,7 @@ local c = {
     provider = {
       name = "file_type",
       opts = {
-        filetype_icon = true,
+        filetype_icon = false,
         case = "titlecase",
       },
     },
