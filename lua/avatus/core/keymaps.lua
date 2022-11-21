@@ -35,8 +35,7 @@ keymaps.set("n", "<leader>hh", ":nohl<CR>")
 
 keymaps.set("n", "x", '"_x"')
 
-keymaps.set("n", "<leader>`", "<cmd>lua _swap_bufs()<CR>", { noremap = true, silent = true })
--- keymaps.set("", "gl", require("lsp_lines").toggle, { desc = "Toggle lsp_lines" })
+keymaps.set("n", "<leader>t", "<cmd>lua _swap_bufs()<CR>", { noremap = true, silent = true })
 
 keymaps.set("n", "<leader>gg", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
 keymaps.set(
@@ -47,7 +46,12 @@ keymaps.set(
 )
 
 keymaps.set("n", "<leader>e", ":Neotree toggle<CR>")
-keymaps.set("n", "<leader>b", ":Neotree buffers toggle<CR>")
+keymaps.set(
+  "n",
+  "<leader>b",
+  "<cmd>lua require('fzf-lua').buffers({previewer = false, winopts = { row = 1, width = 1, height = 0.5}})<CR>",
+  { noremap = true, silent = true }
+)
 keymaps.set("n", "<leader>G", ":Neotree git_status toggle<CR>")
 keymaps.set(
   "n",

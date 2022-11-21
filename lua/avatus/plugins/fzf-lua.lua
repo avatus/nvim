@@ -28,5 +28,10 @@ fzf.setup({
       ["ctrl-f"] = actions.file_vsplit,
       ["ctrl-space"] = actions.file_split,
     },
+    buffers = {
+      ["default"] = actions.file_edit_or_qf,
+      ["ctrl-f"] = actions.file_vsplit,
+      ["ctrl-space"] = actions.file_split,
+    },
   },
 })

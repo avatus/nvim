@@ -33,7 +33,6 @@ return packer.startup(function(use)
   use("wbthomason/packer.nvim")
 
   use("nvim-lua/plenary.nvim") -- lua functions that many plugins use
-  use("lewis6991/impatient.nvim") -- lazyload plugins
 
   use("folke/tokyonight.nvim") -- colorscheme
 

@@ -1,4 +1,3 @@
-require("impatient")
 require("avatus.plugins-setup")
 require("avatus.core.options")
 require("avatus.core.keymaps")
