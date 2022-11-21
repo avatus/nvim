@@ -125,6 +125,7 @@ return packer.startup(function(use)
       ts_update()
     end,
   })
+  use("JoosepAlviste/nvim-ts-context-commentstring")
   use("nvim-treesitter/playground")
 
   -- auto closing
