@@ -11,6 +11,10 @@ end
 fzf.setup({
   winopts = {
     border = "single",
+    preview = {
+      horizontal = "right:40%",
+      border = "noborder",
+    },
   },
   files = {
     git_icons = false,

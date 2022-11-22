@@ -103,6 +103,16 @@ cmp.setup({
     { name = "buffer" }, -- text within current buffer
     { name = "path" }, -- file system paths
   }),
+  window = {
+    documentation = {
+      border = { "", "", "", " ", "", "", "", " " },
+      winhighlight = "NormalFloat:NormalFloat,FloatBorder:NormalFloat",
+    },
+  },
+  experimental = {
+    ghost_text = false,
+    native_menu = false,
+  },
   -- configure lspkind for vs-code like icons
   formatting = {
     fields = { "kind", "abbr", "menu" },

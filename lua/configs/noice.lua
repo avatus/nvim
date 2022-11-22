@@ -4,6 +4,38 @@ if not ok then
 end
 
 noice.setup({
+  lsp = {
+    hover = {
+      enabled = true,
+    },
+    signature = {
+      enabled = true,
+    },
+    message = {
+      enabled = true,
+    },
+    override = {
+      ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+      ["vim.lsp.util.stylize_markdown"] = true,
+    },
+    documentation = {
+      view = "hover",
+      opts = {
+        lang = "markdown",
+        replace = true,
+        render = "plain",
+        format = { "{message}" },
+        win_options = { concealcursor = "n", conceallevel = 3 },
+      },
+    },
+  },
+  presets = {
+    bottom_search = true,
+    command_palette = false,
+    inc_rename = true,
+    long_message_to_split = true,
+    lsp_doc_border = false,
+  },
   notify = {
     enabled = false,
   },
@@ -17,20 +49,6 @@ noice.setup({
       search_down = { kind = "search", pattern = "^/", icon = "  ", lang = "regex" },
       search_up = { kind = "search", pattern = "^%?", icon = "  ", lang = "regex" },
     },
-  },
-  lsp = {
-    signature = {
-      enabled = false,
-    },
-    -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
-    override = {
-      ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
-      ["vim.lsp.util.stylize_markdown"] = true,
-      ["cmp.entry.get_documentation"] = true,
-    },
-  },
-  presets = {
-    long_message_to_split = true,
   },
   routes = {
     {

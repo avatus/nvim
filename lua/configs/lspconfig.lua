@@ -49,7 +49,7 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
-local servers = { "jsonls", "sumneko_lua", "tsserver", "tailwindcss", "elixirls", "gopls", "rust_analyzer", "rome" }
+local servers = { "jsonls", "sumneko_lua", "tsserver", "tailwindcss", "elixirls", "gopls", "rust_analyzer", "eslint_d" }
 -- configure typescript server with plugin
 typescript.setup({
   server = {
@@ -110,5 +110,5 @@ local config = {
 vim.diagnostic.config(config)
 -- Change border of documentation hover window, See https://github.com/neovim/neovim/pull/13998.
 vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
-  border = "single",
+  border = "none",
 })
