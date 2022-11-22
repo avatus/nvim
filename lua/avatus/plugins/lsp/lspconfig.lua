@@ -25,7 +25,7 @@ local on_attach = function(client, bufnr)
 
   -- set keybinds
   keymap.set("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-  keymap.set("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts)
+  keymap.set("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>zz", opts)
   keymap.set("n", "<leader>R", "<cmd>lua vim.lsp.buf.rename()<CR>", opts)
   keymap.set("n", "gr", "<Cmd>lua vim.lsp.buf.references()<CR>", opts)
   keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)

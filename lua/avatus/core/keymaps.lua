@@ -36,6 +36,8 @@ keymaps.set("n", "<leader>hh", ":nohl<CR>")
 keymaps.set("n", "x", '"_x"')
 
 keymaps.set("n", "<leader>t", "<cmd>lua _swap_bufs()<CR>", { noremap = true, silent = true })
+keymaps.set("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true })
+keymaps.set("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true })
 
 keymaps.set("n", "<leader>gg", "<cmd>lua _lazygit_toggle()<CR>", { noremap = true, silent = true })
 keymaps.set(
@@ -83,5 +85,5 @@ keymaps.set(
   '<cmd>lua vim.diagnostic.open_float({ border = "single" })<CR>',
   { noremap = true, silent = true }
 )
-keymaps.set("n", "<leader>lj", "<cmd>lua vim.diagnostic.goto_next()<CR>")
-keymaps.set("n", "<leader>lk", "<cmd>lua vim.diagnostic.goto_prev()<CR>")
+keymaps.set("n", "<leader>lj", "<cmd>lua vim.diagnostic.goto_next()<CR>zz")
+keymaps.set("n", "<leader>lk", "<cmd>lua vim.diagnostic.goto_prev()<CR>zz")
