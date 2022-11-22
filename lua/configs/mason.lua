@@ -16,7 +16,7 @@ if not mason_null_ls_status then
   return
 end
 
-local servers = { "jsonls", "sumneko_lua", "tsserver", "tailwindcss", "elixirls", "gopls", "rust_analyzer" }
+local servers = { "jsonls", "sumneko_lua", "tsserver", "tailwindcss", "elixirls", "gopls", "rust_analyzer", "rome" }
 -- enable mason
 mason.setup()
 

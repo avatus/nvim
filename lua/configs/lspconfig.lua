@@ -49,7 +49,7 @@ for type, icon in pairs(signs) do
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
-local servers = { "jsonls", "sumneko_lua", "tsserver", "tailwindcss", "elixirls", "gopls", "rust_analyzer" }
+local servers = { "jsonls", "sumneko_lua", "tsserver", "tailwindcss", "elixirls", "gopls", "rust_analyzer", "rome" }
 -- configure typescript server with plugin
 typescript.setup({
   server = {
