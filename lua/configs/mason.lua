@@ -16,7 +16,7 @@ if not mason_null_ls_status then
   return
 end
 
-local servers = { "jsonls", "sumneko_lua", "tsserver", "tailwindcss", "elixirls", "gopls", "rust_analyzer", "rome" }
+local servers = { "jsonls", "sumneko_lua", "tsserver", "tailwindcss", "elixirls", "gopls", "rust_analyzer", "eslint_d" }
 -- enable mason
 mason.setup()
 
@@ -33,7 +33,7 @@ mason_null_ls.setup({
     "gofumpt",
     "prettier", -- ts/js formatter
     "stylua", -- lua formatter
-    --[[ "eslint_d", -- ts/js linter ]]
+    "eslint_d", -- ts/js linter
   },
   -- auto-install configured formatters & linters (with null-ls)
   automatic_installation = true,

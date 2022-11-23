@@ -35,7 +35,7 @@ keymaps.set("n", "<leader>hh", ":nohl<CR>")
 
 keymaps.set("n", "x", '"_x"')
 
-keymaps.set("n", "<leader>t", "<cmd>lua _swap_bufs()<CR>", { noremap = true, silent = true })
+keymaps.set("n", "<leader>`", "<cmd>lua _swap_bufs()<CR>", { noremap = true, silent = true })
 keymaps.set("n", "<C-u>", "<C-u>zz", { noremap = true, silent = true })
 keymaps.set("n", "<C-d>", "<C-d>zz", { noremap = true, silent = true })
 
