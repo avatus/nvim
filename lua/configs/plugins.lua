@@ -88,7 +88,11 @@ return packer.startup(function(use)
 
   use("feline-nvim/feline.nvim") -- statusline
 
-  use("ibhagwan/fzf-lua") -- fuzzy finding
+  use("nvim-telescope/telescope.nvim")
+  use({
+    "nvim-telescope/telescope-fzf-native.nvim",
+    run = "cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build",
+  })
 
   use("hrsh7th/nvim-cmp") -- completion plugin
   use("hrsh7th/cmp-buffer") -- source for text in buffer

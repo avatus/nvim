@@ -48,25 +48,10 @@ keymaps.set(
 )
 
 keymaps.set("n", "<leader>e", ":Neotree toggle<CR>")
-keymaps.set(
-  "n",
-  "<leader>b",
-  "<cmd>lua require('fzf-lua').buffers({previewer = false, winopts = { row = 1, width = 1, height = 0.5}})<CR>",
-  { noremap = true, silent = true }
-)
+keymaps.set("n", "<leader>b", "<cmd>Telescope buffers<CR>", { noremap = true, silent = true })
 keymaps.set("n", "<leader>G", ":Neotree git_status toggle<CR>")
-keymaps.set(
-  "n",
-  "<leader>f",
-  "<cmd>lua require('fzf-lua').files({ winopts = {row = 1, width = 1, height = 0.5}})<CR>",
-  { noremap = true, silent = true }
-)
-keymaps.set(
-  "n",
-  "<leader>st",
-  "<cmd>lua require('fzf-lua').live_grep_native({winopts = {fullscreen = true}})<CR>",
-  { noremap = true, silent = true }
-)
+keymaps.set("n", "<leader>f", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true })
+keymaps.set("n", "<leader>st", "<cmd>Telescope live_grep<CR>", { noremap = true, silent = true })
 keymaps.set(
   "n",
   "<leader>o",
