@@ -48,7 +48,7 @@ keymaps.set(
 )
 
 keymaps.set("n", "<leader>e", ":Neotree toggle<CR>")
-keymaps.set("n", "<leader>b", "<cmd>Telescope buffers<CR>", { noremap = true, silent = true })
+keymaps.set("n", "<leader>b", "<cmd>BufstopFast<CR>", { noremap = true, silent = true })
 keymaps.set("n", "<leader>G", ":Neotree git_status toggle<CR>")
 keymaps.set("n", "<leader>f", "<cmd>Telescope find_files<CR>", { noremap = true, silent = true })
 keymaps.set("n", "<leader>st", "<cmd>Telescope live_grep<CR>", { noremap = true, silent = true })

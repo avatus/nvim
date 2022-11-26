@@ -40,8 +40,12 @@ noice.setup({
     enabled = false,
   },
   messages = {
-    enabled = true,
-    view_search = false,
+    enabled = true, -- enables the Noice messages UI
+    view = false, -- default view for messages
+    view_error = "notify", -- view for errors
+    view_warn = false, -- view for warnings
+    view_history = false, -- view for :messages
+    view_search = false, -- view for search count messages. Set to `false` to disable
   },
   cmdline = {
     view = "cmdline",
@@ -56,46 +60,6 @@ noice.setup({
         event = "msg_show",
         kind = "",
         find = "written",
-      },
-      opts = { skip = true },
-    },
-    {
-      filter = {
-        event = "msg_show",
-        kind = "",
-        find = "more line",
-      },
-      opts = { skip = true },
-    },
-    {
-      filter = {
-        event = "msg_show",
-        kind = "",
-        find = "fewer lines",
-      },
-      opts = { skip = true },
-    },
-    {
-      filter = {
-        event = "msg_show",
-        kind = "",
-        find = "line less",
-      },
-      opts = { skip = true },
-    },
-    {
-      filter = {
-        event = "msg_show",
-        kind = "",
-        find = "yanked",
-      },
-      opts = { skip = true },
-    },
-    {
-      filter = {
-        event = "msg_show",
-        kind = "emsg",
-        find = "Pattern not found",
       },
       opts = { skip = true },
     },
